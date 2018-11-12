@@ -5,10 +5,7 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   color: black;
-
-
 }
 h1 {
   font-size: 60px;
@@ -29,6 +26,4 @@ a {
   background-repeat: repeat;
   padding: 0px 30px;
   max-width: auto;
-}
-giulia_image: small;
 }
