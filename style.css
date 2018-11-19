@@ -1,5 +1,5 @@
 header{
-  font-family: Avenir Next;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-image: url(apple_background.jpg);
   background-size: cover;
@@ -20,7 +20,7 @@ h2 {
   background: rgba(242, 242, 242, 0.5)
 }
 body {
-  font-family: Avenir Next;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: normal;
 }
