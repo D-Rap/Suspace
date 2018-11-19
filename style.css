@@ -5,14 +5,19 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: black;
+  color: rgba(89, 89, 89,1);
+  padding: 0px 100px;
 }
 h1 {
   font-size: 60px;
   font-weight: normal;
+  background: rgba(242, 242, 242, 0.5)
+
+
 }
 h2 {
-  font-weight: lighter;
+  font-weight:300;
+  background: rgba(242, 242, 242, 0.5)
 }
 body {
   font-family: Avenir Next;
