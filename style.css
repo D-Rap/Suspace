@@ -6,7 +6,7 @@ header{
   padding: 0px 100px;
 }
 h1 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: normal;
   background: rgba(242, 242, 242, 0.5)
 }
@@ -19,8 +19,9 @@ h3{
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   text-align: center;
-  font-weight: normal;
+  font-weight: 300;
   background-image: url(apple_background.jpg);
   background-size:  cover;
   background-position: center;
@@ -40,23 +41,84 @@ body {
 div {
   text-align: center;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 15px;
+  background: rgba(242, 242, 242, 0.5);
 }
 a {
   color: rgba(89, 89, 89,1);
   background: rgba(242, 242, 242, 0.5);
   font-size: 20px;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: centre;
-    text-decoration: none;
-    border-radius: 20%;
-    margin: auto;
+body {
+    font-family: 'Lato', sans-serif;
 }
-.fa:hover {
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.fa {
+      padding: 20px;
+      font-size: 30px;
+      width: auto;
+      text-align: centre;
+      text-decoration: none;
+      border-radius: 20%;
+      margin: auto;
+  }
+  .fa:hover {
     opacity: 0.7;
 }
 .fa-facebook {
@@ -72,7 +134,7 @@ a {
   color: white;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: 'Montserrat', sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -103,4 +165,5 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+
 }
