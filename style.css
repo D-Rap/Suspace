@@ -53,17 +53,18 @@ a {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: centre;
-    text-decoration: none;
-    border-radius: 20%;
-    margin: auto;
-}
-.fa:hover {
+      padding: 20px;
+      font-size: 30px;
+      width: auto;
+      text-align: centre;
+      text-decoration: none;
+      border-radius: 20%;
+      margin: auto;
+  }
+  .fa:hover {
     opacity: 0.7;
 }
 .fa-facebook {
