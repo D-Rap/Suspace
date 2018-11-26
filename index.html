@@ -2,20 +2,33 @@
 <head>
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel='stylesheet' href='style.css'>
-  <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <header>
 <h1> Suspace </h1>
 <h2> Sustainable Swaps at Your Own Pace </h2>
 </header>
 <body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contacts.html">Contact</a>
+      <a href="share.html">Share</a>
+    </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contacts.html">Contact</a>
-<a href="#">Food</a>
-<a href="share.html">Share</a>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
 
 
 </body>
