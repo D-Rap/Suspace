@@ -1,34 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 header{
-  font-family: Avenir Next;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-image: url(apple_background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: rgba(89, 89, 89,1);
   padding: 0px 100px;
 }
 h1 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: normal;
   background: rgba(242, 242, 242, 0.5)
-
-
 }
 h2 {
   font-weight:300;
   background: rgba(242, 242, 242, 0.5)
 }
-body {
-  font-family: Avenir Next;
-  text-align: center;
-  font-weight: normal;
+h3{
+  background: rgba(242, 242, 242, 0.5);
 }
-a {
-  color: black;
-  background-color: rgba(224,219,219,1);
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  background-image: url(apple_background.jpg);
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-repeat: repeat;
   padding: 0px 30px;
   max-width: auto;
+  }
+  head {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(89, 89, 89,1);
+    padding: 0px 100px;
+    background: rgba(242, 242, 242, 0.5);
+  }
+div {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  background: rgba(242, 242, 242, 0.5);
+}
+a {
+  color: rgba(89, 89, 89,1);
+  background: rgba(242, 242, 242, 0.5);
+  font-size: 20px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.2);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgba(0,0,0, 0.2);
+
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(0,0,0);
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.fa {
+      padding: 20px;
+      font-size: 30px;
+      width: auto;
+      text-align: centre;
+      text-decoration: none;
+      border-radius: 20%;
+      margin: auto;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+body {font-family: 'Montserrat', sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
 }
