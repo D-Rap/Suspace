@@ -14,46 +14,130 @@ initial-scale=1.0">
   <a href="share.html">Share</a>
 </body>
 <header>
-  <h1>Sustainable Food!</h1>
-  <h3>Easy swap for everyday items.</h3>
+  <h1>Sustainable Food</h1>
+  <h3>Seasonal products. Easy swap for everyday groceries.</h3>
 </header>
   <style>
 #food {
     border-collapse: separate;
-    border-spacing:3px;
+
 }
-#food td, #food th {
-    border: 0px ;
-    padding: 8px;
-}
-#food td:hover {background-color: #ddd;}
-#food th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    background-color: #F2E1BF;
-    color: grey;
-}
+
 #food td {
-    background-color: #F7F1E4;
-    text-align: center;
+    border: 0px ;
+    padding: 70px;
+    border-width: : 20px;
 }
+
+.zoom {
+    transition: transform .2s;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.container {
+  position: relative;
+  width:440px;
+  height:380px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: :#FFFAEE;
+}
+
+.container:hover .overlay {
+  opacity: 4;
+}
+
+.text {
+  color:rgba(90, 90, 90,1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 </style>
 </head>
+
 <body>
 
 <table id="food",table width="100%">
   <tr>
- 	<th colspan="2">&nbsp; Hover to find out
- 	</th>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/veg.jpg" alt="veg" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Vegetable</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/fruit.jpg" alt="fruit" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Fruit</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>Egg</td>
-    <td>Milk</td>
-  </tr>
-  <tr>
-    <td>Meat</td>
-    <td>Cheese</td>
+    <td>
+        <div class="zoom">
+        <div class="container">
+          <img src="Images/meat.jpg" alt="meat" style="width:400px;height:300px;">
+          <div class="overlay">
+            <div class="text">Meat and Game</div>
+          </div>
+          </div>
+        </div>
+        </div>
+    </td>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/seafood.jpg" alt="seafood" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Fish and Seafood</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
   </tr>
 </table>
 
