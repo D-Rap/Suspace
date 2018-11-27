@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contacts.html">Contact</a>
+  <a href="share.html">Share</a>
+</body>
+<header>
+  <h1> Sustainable Swaps for Your Unsustainable Products </h1>
+  <h2>Click on the unsustainable products below to reveal a sustainable alternative</h2>
+</header>
+  <style>
+#product {
+    border-collapse: separate;
+
+}
+
+#product td {
+    border: 0px ;
+    padding: 70px;
+    border-width: : 20px;
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.container {
+  position: relative;
+  width:440px;
+  height:380px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: :#FFFAEE;
+}
+
+.container:hover .overlay {
+  opacity: 4;
+}
+
+.text {
+  color:rgba(90, 90, 90,1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<table id="product",table width="100%">
+  <tr>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="toothbrush_image.jpg" alt="toothbrush" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Plastic Toothbrush</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="straws_image.jpg" alt="straws" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Plastic Straws</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <div class="zoom">
+        <div class="container">
+          <img src="bottles_image.jpg" alt="bottle" style="width:400px;height:300px;">
+          <div class="overlay">
+            <div class="text">Plastic Bottles</div>
+          </div>
+          </div>
+        </div>
+        </div>
+    </td>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="pbag_image.jpg" alt="bag" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Plastic Bags</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
