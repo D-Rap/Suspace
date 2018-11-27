@@ -6,28 +6,25 @@ header{
   padding: 0px 100px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: normal;
   background: rgba(242, 242, 242, 0.5)
 }
 h2 {
+  font-size: 30px
   font-weight:300;
   background: rgba(242, 242, 242, 0.5)
 }
 h3{
+  font-size: 25px
   background: rgba(242, 242, 242, 0.5);
 }
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  background-image: url('background_image.jpg')
   text-align: center;
   font-weight: 300;
-  background-image: url(apple_background.jpg);
-  background-size:  cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-repeat: repeat;
   padding: 0px 30px;
   max-width: auto;
   }
@@ -167,5 +164,17 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+#overflowTest {
+    background:rgba(242, 242, 242, 0.5);
+    color: rgba(89, 89, 89,1);
+    padding: 15px;
+    width: 100%;
+    height: 120px;
+    overflow: scroll;
+}
 
+.jumbotron {
+  background-color: rgba(242, 242, 242, 0.5);
+  color: rgba(89, 89, 89,1);
 }
