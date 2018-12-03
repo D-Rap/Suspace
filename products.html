@@ -1,42 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href='css/bootstrap.css'>
-  <link rel="stylesheet" href='style.css'>
-  <link rel="styleshoeet" href="products.js">
-  <title>Products</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<link rel='stylesheet' href='style.css'>
 </head>
+<div class="jumbotron text-center">
 <body>
-
-  <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="products.html">Products</a>
   <a href="contacts.html">Contact</a>
   <a href="food.html">Food</a>
   <a href="share.html">Share</a>
-
-  <div class="container-fluid">
-
-    <h1> Sustainable Swaps for Your Unsustainable Products </h1> 
-    <h2>Click on the unsustainable products below to reveal a sustainable alternative</h2>
-    <div class="row">
-      <div class="col-xs-3">
-        <img src="toothbrush_image.jpg" alt="Photo of Toothbrush" height="250" width="300">
-        <p>Plastic Toothbrush</p>
-      </div>
-      <div class="col-xs-3">
-        <img src="pbag_image.jpg" alt="Photo of Bag" height="250" width="300">
-        <p>Plastic Shopping Bags</p>
-      </div>
-      <div class="col-xs-3">
-        <img src="bottles_image.jpg" alt="Photo of Bottle" height="250" width="300">
-        <p>Plastic Bottles</p>
-      </div>
-      <div class="col-xs-3">
-        <img src="straws_image.jpg" alt="Photo of Straws" height="250" width="300">
-        <p>Plastic Straws</p>
-      </div>
-    </div>
-  </div>
 </body>
-</html>
+<header>
+  <h1> Sustainable Swaps for Your Unsustainable Products </h1>
+  <h2>Click on the room to find sustainable products for your home</h2>
+</header>
+  <style>
+#product {
+    border-collapse: separate;
+
+}
+
+#product td {
+    border: 0px ;
+    padding: 70px;
+    border-width: : 20px;
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.container {
+  position: relative;
+  width:440px;
+  height:380px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: :#FFFAEE;
+}
+
+.container:hover .overlay {
+  opacity: 4;
+}
+
+.text {
+  color:rgba(90, 90, 90,1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<table id="product",table width="100%">
+  <tr>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/bathroom.jpg" alt="bathroon" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Bathroom Swaps</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/kitchen.jpg" alt="kitchen" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Kitchen Swaps</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <div class="zoom">
+        <div class="container">
+          <img src="Images/bedroom.jpg" alt="bedroom" style="width:400px;height:300px;">
+          <div class="overlay">
+            <div class="text">Bedroom Swaps</div>
+          </div>
+          </div>
+        </div>
+        </div>
+    </td>
+    <td>
+      <div class="zoom">
+      <div class="container">
+        <img src="Images/study.jpeg" alt="study" style="width:400px;height:300px;">
+        <div class="overlay">
+          <div class="text">Study Swaps</div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</div>

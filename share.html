@@ -5,20 +5,37 @@
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0">
 </head>
+<div class="jumbotron text-center">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="food.html">Food</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about.html">About</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.height = "0%";
+}
+</script>
 <header>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="products.html">Products</a>
-  <a href="contacts.html">Contact</a>
-  <a href="food.html">Food</a>
   <h1>
     Follow us!
   </h1>
   <h2>
     We are available all over the web and love seeing your sustainable swaps!
   </h2>
-  <h3>
-        Find us on:
+  <h3>Find us on:</h3>
+</header>
         <p>
 
     <div id='social-buttons'
@@ -33,30 +50,29 @@ Or talk to us directly...
 </p>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container">
-<form action="action_page.php">
+    <div class="container">
+      <form action="action_page.php">
 
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-  <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-  <label for="country">Country</label>
-  <select id="country" name="country">
-    <option value="australia">Australia</option>
-    <option value="canada">Canada</option>
-    <option value="uk">UK</option>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="usa">USA</option>
+        </select>
 
-    <option value="usa">USA</option>
-  </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-  <label for="subject">Subject</label>
-  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
 
-  <input type="submit" value="Submit">
-
-</form>
-</div>
+      </form>
     </div>
-  </header>
+  </div>
+</div>
