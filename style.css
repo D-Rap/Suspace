@@ -52,7 +52,8 @@ a {
 body {
     font-family: 'Lato', sans-serif;
 }
-
+p {    font-family: 'Montserrat', sans-serif;
+}
 .overlay {
     height: 0%;
     width: 100%;
@@ -167,5 +168,6 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 
 }
