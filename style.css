@@ -49,6 +49,10 @@ a {
 body {
     font-family: 'Lato', sans-serif;
 }
+p {    font-family: 'Montserrat', sans-serif;
+
+
+}
 
 .overlay {
     height: 0%;
@@ -164,6 +168,8 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 #overflowTest {
     background:rgba(242, 242, 242, 0.5);
