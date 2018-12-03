@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <head>
   <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel='stylesheet' href='style.css'>
   <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
-<link rel='stylesheet' href='style.css'>
 </head>
-<header>
-  <body>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="food.html">Food</a>
-    <a href="share.html">Share</a>
-  </body>
 <div class="jumbotron text-center">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="food.html">Food</a>
+      <a href="about.html">About</a>
+      <a href="share.html">Share</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.height = "0%";
+}
+</script>
+<header>
   <h2>Get in touch! </h2>
   <h4>Who we are:</h4>
 </header>
-<body>
-   <div class=“row”>
-   <div class="col-xs-3"><h2>Giulia</h2> Philosophy student at the University of Bristol <img src="giulia_image.jpg" class="img-fluid" alt="Photo of Giulia"></div>
-   <div class="col-xs-3"><h2>Sophie</h2> Neuroscience student at the University of Bristol<img src="sophie_image.jpg" class="img-fluid" alt="Photo of Sophie"></div>
-   <div class="col-xs-3"><h2>Dharapa</h2> Aerospace(eng)student at the University of Bristol<img src="dharapa_image.jpg" class="img-fluid" alt="Photo of Dharapa"></div>
-   <div class="col-xs-3"><h2>Georgie</h2> Neuroscience student at the University of Bristol<img src="georgie_image.jpg" class="img-fluid" alt="Photo of Georgie"></div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12"><button type="button" class="btn btn-default"><a href=mailto:gl15784@my.bristol.ac.uk>Email us!</a></button></div>
-  </div>
+  <body>
+    <div class=“row”>
+     <div class="col-xs-3"><h2>Giulia</h2> Philosophy student at the University of Bristol <img src="giulia_image.jpg" class="img-fluid" alt="Photo of Giulia"></div>
+     <div class="col-xs-3"><h2>Sophie</h2> Neuroscience student at the University of Bristol<img src="sophie_image.jpg" class="img-fluid" alt="Photo of Sophie"></div>
+     <div class="col-xs-3"><h2>Dharapa</h2> Aerospace(eng)student at the University of Bristol<img src="dharapa_image.jpg" class="img-fluid" alt="Photo of Dharapa"></div>
+     <div class="col-xs-3"><h2>Georgie</h2> Neuroscience student at the University of Bristol<img src="georgie_image.jpg" class="img-fluid" alt="Photo of Georgie"></div>
+    </div>
+      <div class="row">
+        <div class="col-xs-12"><button type="button" class="btn btn-default"><a href=mailto:gl15784@my.bristol.ac.uk>Email us!</a></button></div>
+      </div>
+  </body>
  </div>
-</body>
